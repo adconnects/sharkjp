@@ -1,0 +1,647 @@
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '28505653715766429');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=28505653715766429&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zippaypay</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#edf7f7;
+color:#071133;
+overflow-x:hidden;
+}
+
+/* CONTAINER */
+
+.container{
+width:92%;
+max-width:1200px;
+margin:auto;
+}
+
+/* HERO */
+
+.hero{
+padding:20px 0 60px;
+}
+
+.navbar{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:35px;
+flex-wrap:wrap;
+}
+
+.logo{
+width:55px;
+height:55px;
+border-radius:18px;
+background:#0c1435;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+color:#fff;
+font-weight:700;
+flex-shrink:0;
+}
+
+.brand{
+font-size:34px;
+font-weight:800;
+}
+
+.badge{
+display:inline-flex;
+align-items:center;
+gap:10px;
+background:#fff;
+padding:14px 24px;
+border-radius:60px;
+margin-bottom:30px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+font-weight:600;
+font-size:18px;
+flex-wrap:wrap;
+max-width:100%;
+}
+
+.dot{
+width:14px;
+height:14px;
+background:#1cb85d;
+border-radius:50%;
+flex-shrink:0;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 420px;
+gap:45px;
+align-items:center;
+}
+
+.hero h1{
+font-size:68px;
+line-height:1.05;
+font-weight:800;
+margin-bottom:22px;
+word-break:break-word;
+}
+
+.hero p{
+font-size:22px;
+line-height:1.7;
+color:#64708a;
+margin-bottom:35px;
+}
+
+.button-group{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+.cta{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:18px 42px;
+border-radius:60px;
+background:linear-gradient(90deg,#11c0b2,#2e9fff);
+color:#fff;
+font-size:20px;
+font-weight:700;
+text-decoration:none;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.telegram-btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:18px 38px;
+border-radius:60px;
+background:#229ED9;
+color:#fff;
+font-size:20px;
+font-weight:700;
+text-decoration:none;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.cta:hover,
+.telegram-btn:hover{
+transform:translateY(-3px);
+}
+
+/* CARD */
+
+.stats-card{
+background:#0d1638;
+border-radius:35px;
+padding:30px;
+color:#fff;
+box-shadow:0 20px 50px rgba(0,0,0,0.1);
+width:100%;
+overflow:hidden;
+}
+
+.stats-top{
+display:flex;
+justify-content:space-between;
+gap:10px;
+margin-bottom:35px;
+font-size:18px;
+flex-wrap:wrap;
+}
+
+.percent{
+font-size:95px;
+font-weight:800;
+line-height:1;
+word-break:break-word;
+}
+
+.sub{
+font-size:22px;
+margin-top:10px;
+color:#c5cff4;
+line-height:1.5;
+}
+
+.box-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+margin-top:30px;
+}
+
+.small-box{
+background:rgba(255,255,255,0.10);
+padding:25px;
+border-radius:25px;
+}
+
+.small-box h3{
+font-size:20px;
+margin-bottom:10px;
+font-weight:500;
+line-height:1.4;
+}
+
+.small-box p{
+font-size:42px;
+font-weight:800;
+color:#fff;
+line-height:1.2;
+word-break:break-word;
+}
+
+/* FEATURES */
+
+.features{
+padding:20px 0 70px;
+}
+
+.section-title{
+font-size:52px;
+font-weight:800;
+margin-bottom:40px;
+line-height:1.2;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.feature-card{
+background:#fff;
+padding:35px;
+border-radius:30px;
+box-shadow:0 10px 35px rgba(0,0,0,0.04);
+}
+
+.feature-card .icon{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.feature-card h3{
+font-size:32px;
+margin-bottom:16px;
+line-height:1.3;
+}
+
+.feature-card p{
+font-size:20px;
+line-height:1.7;
+color:#65708c;
+}
+
+/* REVIEWS */
+
+.review-section{
+padding:20px 0 80px;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.review-card{
+background:#fff;
+padding:35px;
+border-radius:30px;
+box-shadow:0 10px 35px rgba(0,0,0,0.04);
+}
+
+.stars{
+font-size:24px;
+margin-bottom:22px;
+color:#ffbf00;
+}
+
+.review-text{
+font-size:32px;
+font-weight:700;
+line-height:1.4;
+margin-bottom:20px;
+}
+
+.review-name{
+font-size:22px;
+color:#707a96;
+}
+
+/* FOOTER */
+
+.footer{
+padding:35px 15px;
+text-align:center;
+font-size:16px;
+color:#6b7692;
+line-height:1.6;
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+.hero-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:52px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.section-title{
+font-size:42px;
+}
+
+.percent{
+font-size:78px;
+}
+
+.review-text{
+font-size:28px;
+}
+
+.brand{
+font-size:28px;
+}
+
+.small-box p{
+font-size:34px;
+}
+
+.stats-card{
+max-width:100%;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.hero{
+padding-top:20px;
+padding-bottom:50px;
+}
+
+.navbar{
+margin-bottom:28px;
+}
+
+.logo{
+width:48px;
+height:48px;
+font-size:24px;
+}
+
+.brand{
+font-size:26px;
+}
+
+.hero h1{
+font-size:38px;
+line-height:1.15;
+}
+
+.hero p{
+font-size:17px;
+line-height:1.7;
+}
+
+.badge{
+font-size:14px;
+padding:12px 16px;
+width:100%;
+justify-content:center;
+text-align:center;
+}
+
+.button-group{
+flex-direction:column;
+width:100%;
+}
+
+.cta,
+.telegram-btn{
+width:100%;
+text-align:center;
+font-size:17px;
+padding:16px;
+}
+
+.stats-card{
+padding:22px;
+border-radius:28px;
+}
+
+.percent{
+font-size:58px;
+}
+
+.sub{
+font-size:18px;
+}
+
+.box-grid{
+grid-template-columns:1fr;
+}
+
+.small-box{
+padding:18px;
+}
+
+.small-box h3{
+font-size:18px;
+}
+
+.small-box p{
+font-size:26px;
+}
+
+.section-title{
+font-size:34px;
+margin-bottom:28px;
+}
+
+.feature-card{
+padding:28px;
+}
+
+.feature-card h3{
+font-size:25px;
+}
+
+.feature-card p{
+font-size:17px;
+}
+
+.review-card{
+padding:28px;
+}
+
+.review-text{
+font-size:22px;
+}
+
+.review-name{
+font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+<div class="container">
+
+<div class="navbar">
+<div class="logo">₹</div>
+<div class="brand">Zippaypay</div>
+</div>
+
+<div class="badge">
+<div class="dot"></div>
+Trusted INR & USDT Exchange
+</div>
+
+<div class="hero-grid">
+
+<div>
+
+<h1>Earn More Daily with zippaypay</h1>
+
+<p>
+Secure platform with instant INR & USDT exchange, fast withdrawals and stable daily returns.
+</p>
+
+<div class="button-group">
+
+<a href="https://t.me/+YQTqARIjLjU4MmFl" class="cta">
+Contact Now
+</a>
+
+<a href="https://t.me/+YQTqARIjLjU4MmFl" class="telegram-btn">
+Join Telegram
+</a>
+
+</div>
+
+</div>
+
+<div class="stats-card">
+
+<div class="stats-top">
+<span>Daily Return</span>
+<span>Live</span>
+</div>
+
+<div class="percent">4%</div>
+
+<div class="sub">
+4% base + 1% bonus on INR
+</div>
+
+<div class="box-grid">
+
+<div class="small-box">
+<h3>USDT Buy/Sell</h3>
+<p>₹105–108</p>
+</div>
+
+<div class="small-box">
+<h3>Withdrawals</h3>
+<p>Fast</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="features">
+<div class="container">
+
+<h2 class="section-title">
+Premium earning features
+</h2>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+<div class="icon">🛡️</div>
+<h3>Secure Transactions</h3>
+<p>
+Encrypted exchange flow designed for safer INR and USDT activity.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">⚡</div>
+<h3>Instant Profits</h3>
+<p>
+Quick currency conversion with clear returns and instant visibility.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">💸</div>
+<h3>Fast Withdrawals</h3>
+<p>
+Smooth withdrawal experience built for daily earning workflows.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="review-section">
+<div class="container">
+
+<h2 class="section-title">
+Trusted by daily earners
+</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<div class="review-text">
+“Best earning platform”
+</div>
+<div class="review-name">
+— Amit K.
+</div>
+</div>
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<div class="review-text">
+“Fast exchange process”
+</div>
+<div class="review-name">
+— Priya S.
+</div>
+</div>
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<div class="review-text">
+“Very smooth and secure”
+</div>
+<div class="review-name">
+— Rahul M.
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<div class="footer">
+© 2026 zippay. All rights reserved.
+</div>
+
+</body>
+</html>
